@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b18">
+  <meta name="description" content="MZ CHATBOX — your college information assistant.">
+  <title>MZ CHATBOX | College Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="MZ Chatbox home">
+        <div class="brand-mark"><img src="assets/college-logo.png" alt="College logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="fallback-mark">MZ</span></div>
+        <div><strong>MZ <span>CHATBOX</span></strong><small>COLLEGE DIGITAL ASSISTANT</small></div>
+      </a>
+      <div class="status"><i></i><span>ONLINE</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="spark">✦</span> YOUR CAMPUS, CONNECTED</div>
+      <h1>Hey there.<br><span>How can I help?</span></h1>
+      <p>Your quick guide to campus life, academics and student support.</p>
+    </section>
+
+    <section class="chat-card" aria-label="Chat with MZ">
+      <div class="chat-head">
+        <div class="bot-avatar"><span>✦</span></div>
+        <div class="bot-meta"><strong>MZ Assistant</strong><small><b></b> Ready to help you</small></div>
+        <button class="icon-button" id="clearChat" type="button" aria-label="Clear chat" title="Clear chat">↻</button>
+      </div>
+      <div class="chat-body" id="chatBody" aria-live="polite" aria-label="Chat messages">
+        <div class="message-row bot-row">
+          <div class="mini-avatar">✦</div>
+          <div class="bubble-wrap"><div class="bubble">Welcome to <b>MZ CHATBOX</b>! 👋<br>Ask me about admissions, courses, fees, exams, facilities or college contact details.</div><time>JUST NOW</time></div>
+        </div>
+      </div>
+      <div class="suggestions" id="suggestions">
+        <button type="button" data-question="What courses are available?">Courses</button>
+        <button type="button" data-question="How can I apply for admission?">Admissions</button>
+        <button type="button" data-question="Tell me about campus facilities">Facilities</button>
+        <button type="button" data-question="How do I contact the college?">Contact</button>
+      </div>
+      <form class="composer" id="chatForm">
+        <label class="sr-only" for="messageInput">Type your message</label>
+        <input id="messageInput" type="text" placeholder="Type your question here..." autocomplete="off" maxlength="500">
+        <button class="send-button" type="submit" aria-label="Send message"><span>➤</span></button>
+      </form>
+      <div class="privacy-note"><span>✧</span> MZ CHATBOX · College help, one message away</div>
+    </section>
+    <footer>MADE FOR YOUR CAMPUS <span>•</span> <span class="footer-glow">MZ CHATBOX</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
